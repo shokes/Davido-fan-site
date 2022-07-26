@@ -4,6 +4,7 @@ import hero from '../../public/hero.webp';
 import davido from '../../public/davido-1.jpeg';
 import davido2 from '../../public/davido-2.jpeg';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
@@ -20,7 +21,14 @@ const Hero = () => {
               />
             </div>
             <div className='w-[15rem]'>
-              <h2 className='text-2xl font-bold mb-2'>Davido</h2>
+              <motion.h2
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1.2 }}
+                className='text-2xl font-bold mb-2'
+              >
+                Davido
+              </motion.h2>
               <p className='uppercase mb-5'>
                 singer, songwriter & record producer.
               </p>

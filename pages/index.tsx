@@ -1,8 +1,12 @@
 import Hero from '../components/Hero/Hero';
-
+import { motion, AnimatePresence } from 'framer-motion';
 import Head from 'next/head';
 
-const home = () => {
+type Props = {
+  isVisible: boolean;
+};
+
+const home = ({ isVisible }: Props) => {
   return (
     <section>
       <Head>
