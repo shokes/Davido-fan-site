@@ -1,13 +1,12 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import InitialTransition from '../components/InitialTransition/InitialTransition';
 
 const Albums = () => {
   return (
-    <div>
-      <motion.h2 animate={{ fontSize: 50, color: '#ff2994', x: 100 }}>
-        albums
-      </motion.h2>
-    </div>
+    <section>
+      <InitialTransition />
+      <p>albums</p>
+    </section>
   );
 };
 

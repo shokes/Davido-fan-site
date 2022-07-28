@@ -1,7 +1,13 @@
-import React from 'react';
+import Layout from '../components/Layout';
+import InitialTransition from '../components/InitialTransition/InitialTransition';
 
 const Tour = () => {
-  return <div>Tour</div>;
+  return (
+    <div>
+      <InitialTransition />
+      <p>tour</p>
+    </div>
+  );
 };
 
 export default Tour;

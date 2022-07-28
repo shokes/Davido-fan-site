@@ -5,10 +5,13 @@ import davido from '../../public/davido-1.jpeg';
 import davido2 from '../../public/davido-2.jpeg';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Layout from '../Layout';
+import InitialTransition from '../InitialTransition/InitialTransition';
 
 const Hero = () => {
   return (
     <section>
+      <InitialTransition />
       <div className='container relative '>
         <div className='grid grid-cols-2 '>
           <div className='flex gap-10'>
@@ -63,7 +66,7 @@ const Hero = () => {
               03
             </span>
 
-            <Link href='/Tours'>
+            <Link href='/Tour'>
               <h3 className='text-7xl mt-10 cursor-pointer '>tours</h3>
             </Link>
           </div>
