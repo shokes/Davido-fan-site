@@ -5,7 +5,6 @@ import davido from '../../public/davido-1.jpeg';
 import davido2 from '../../public/davido-2.jpeg';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import Layout from '../Layout';
 import InitialTransition from '../InitialTransition/InitialTransition';
 
 const Hero = () => {
