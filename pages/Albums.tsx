@@ -7,7 +7,7 @@ const Albums = () => {
   return (
     <section>
       <InitialTransition />
-      <div className=' grid grid-cols-5 gap-x-4 overflow-auto overflow-x-scroll'>
+      <div className='container  grid grid-cols-2 gap-4 '>
         {albums.map((item) => {
           return <Image src={item.cover} width={600} height={600} />;
         })}

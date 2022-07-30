@@ -5,31 +5,18 @@ import OBO from '../public/OBO.jpg';
 const albums = [
   {
     id: 1,
-    title: 'a good time',
-    cover: goodTime,
-  },
-  {
-    id: 2,
     title: 'a better time',
 
     cover: betterTime,
   },
-
   {
     id: 2,
-    title: 'omo baba olowo',
-
-    cover: OBO,
+    title: 'a good time',
+    cover: goodTime,
   },
 
   {
-    id: 2,
-    title: 'omo baba olowo',
-
-    cover: OBO,
-  },
-  {
-    id: 2,
+    id: 3,
     title: 'omo baba olowo',
 
     cover: OBO,
