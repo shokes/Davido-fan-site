@@ -7,8 +7,6 @@ import InitialTransition from '../components/InitialTransition/InitialTransition
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <>
-      <Navigation />
-
       <Component {...pageProps} key={router.route} />
     </>
   );

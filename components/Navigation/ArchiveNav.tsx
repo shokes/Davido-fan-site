@@ -1,6 +1,7 @@
+import React from 'react';
 import Link from 'next/link';
 
-const Navigation = () => {
+const ArchiveNav = () => {
   return (
     <section>
       <div className='container'>
@@ -9,8 +10,8 @@ const Navigation = () => {
             <a className='font-medium'>PROFILE</a>
           </Link>
           <ul className='capitalize'>
-            <Link href='/Archive'>
-              <a className='font-medium'>ARCHIVE</a>
+            <Link href='/'>
+              <a className='font-medium'>CLOSE</a>
             </Link>
           </ul>
         </nav>
@@ -19,4 +20,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default ArchiveNav;

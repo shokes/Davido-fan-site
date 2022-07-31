@@ -21,6 +21,13 @@ const albums = [
 
     cover: OBO,
   },
+
+  {
+    id: 3,
+    title: 'omo baba olowo',
+
+    cover: OBO,
+  },
 ];
 
 export default albums;

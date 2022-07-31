@@ -1,12 +1,13 @@
+import React from 'react';
 import Link from 'next/link';
 
-const Navigation = () => {
+const PageNav = () => {
   return (
     <section>
       <div className='container'>
         <nav className='flex justify-between items-center py-10'>
-          <Link href='/Profile'>
-            <a className='font-medium'>PROFILE</a>
+          <Link href='/'>
+            <a className='font-medium'>CLOSE</a>
           </Link>
           <ul className='capitalize'>
             <Link href='/Archive'>
@@ -19,4 +20,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default PageNav;

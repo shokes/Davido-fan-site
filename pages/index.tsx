@@ -1,5 +1,6 @@
 import Hero from '../components/Hero/Hero';
 import Head from 'next/head';
+import Navigation from '../components/Navigation/Navigation';
 
 const home = () => {
   return (
@@ -7,6 +8,7 @@ const home = () => {
       <Head>
         <title>Davido - Home </title>
       </Head>
+      <Navigation />
       <Hero />
     </section>
   );
