@@ -7,11 +7,15 @@ const PageNav = () => {
       <div className='container'>
         <nav className='flex justify-between items-center py-10'>
           <Link href='/'>
-            <a className='font-medium'>CLOSE</a>
+            <a id='style-2' className='font-medium' data-replace='CLOSE'>
+              <span>CLOSE</span>
+            </a>
           </Link>
           <ul className='capitalize'>
             <Link href='/Archive'>
-              <a className='font-medium'>ARCHIVE</a>
+              <a id='style-2' className='font-medium' data-replace='ARCHIVE'>
+                <span>ARCHIVE</span>
+              </a>
             </Link>
           </ul>
         </nav>

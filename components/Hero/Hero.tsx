@@ -6,7 +6,9 @@ import davido2 from '../../public/davido-2.jpeg';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import InitialTransition from '../InitialTransition/InitialTransition';
-
+// import hero from '../../data/hero.webp';
+// import davido from '../../data/davido-1.jpeg';
+// import davido2 from '../../data/davido-2.jpeg';
 const Hero = () => {
   return (
     <section>

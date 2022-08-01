@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import work from './data';
+import work from '../data';
 
 const WorkDetails = () => {
   const router = useRouter();
