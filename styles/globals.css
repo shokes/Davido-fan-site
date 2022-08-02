@@ -91,3 +91,8 @@ a {
   width: 100vw;
   height: 50vw;
 }
+
+.container-bio {
+  max-width: 65rem;
+  margin: 0 auto;
+}

@@ -6,9 +6,7 @@ import davido2 from '../../public/davido-2.jpeg';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import InitialTransition from '../InitialTransition/InitialTransition';
-// import hero from '../../data/hero.webp';
-// import davido from '../../data/davido-1.jpeg';
-// import davido2 from '../../data/davido-2.jpeg';
+
 const Hero = () => {
   return (
     <section>
@@ -61,20 +59,24 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className='absolute top-[24rem] right-[22rem] uppercase font-semibold text-[#343a40] '>
+        <div className='absolute top-[24rem] right-[6rem] uppercase font-semibold text-[#343a40] '>
           <div className='relative'>
             <span className='text-2xl absolute top-[0rem] -left-[2rem]'>
               03
             </span>
 
-            <Link href='/Tour'>
-              <h3 className='text-7xl mt-10 cursor-pointer '>tours</h3>
-            </Link>
+            <a
+              href='https://www.youtube.com/c/DavidoOfficial/videos'
+              target='_blank'
+              className='text-7xl mt-10 cursor-pointer '
+            >
+              music videos
+            </a>
           </div>
         </div>
         <div className='absolute top-[22rem] right-[50rem]  '>
           <Image src={davido2} width={200} height={180} />
-          <h3 className='font-semibold uppercase'>obo</h3>
+          {/* <h3 className='font-semibold uppercase'>obo</h3> */}
         </div>
       </div>
     </section>
