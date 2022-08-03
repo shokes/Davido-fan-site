@@ -43,10 +43,10 @@ const Hero = () => {
 
           <Image src={hero} width={600} height={600} />
         </div>
-        <div className='absolute top-[5rem] right-[22rem] uppercase font-semibold  text-[#343a40]'>
+        <div className='absolute top-[5rem] right-[25rem] uppercase font-semibold  text-[#343a40]'>
           <span className='text-2xl'>01</span>
-          <Link href='/Albums'>
-            <h3 className='text-7xl mt-10 cursor-pointer '>albums</h3>
+          <Link href='/Music'>
+            <h3 className='text-7xl mt-10 cursor-pointer '>music</h3>
           </Link>
         </div>
         <div className='absolute top-[15rem] left-[13rem] uppercase font-semibold text-[#343a40]'>
@@ -59,7 +59,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className='absolute top-[24rem] right-[6rem] uppercase font-semibold text-[#343a40] '>
+        <div className='absolute top-[24rem] right-[22rem] uppercase font-semibold text-[#343a40] '>
           <div className='relative'>
             <span className='text-2xl absolute top-[0rem] -left-[2rem]'>
               03
@@ -70,7 +70,7 @@ const Hero = () => {
               target='_blank'
               className='text-7xl mt-10 cursor-pointer '
             >
-              music videos
+              videos
             </a>
           </div>
         </div>

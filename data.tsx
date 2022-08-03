@@ -1,5 +1,5 @@
 import goodTime from './public/a good time cover.jpg';
-import betterTime from './public/a better time cover.jpg';
+import betterTime from './public/a better time cover.jpeg';
 import OBO from './public/OBO.jpg';
 
 const albums = [

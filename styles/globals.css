@@ -16,7 +16,28 @@
 body {
   background-color: #e1dfdd;
   font-family: 'Lora', serif;
-  /* cursor: wait; */
+  /* overflow: hidden; */
+}
+
+/* .flow {
+  overflow: hidden;
+} */
+
+.project img {
+  transition: all 0.9s;
+  object-fit: cover;
+}
+.see-more {
+  opacity: 0;
+  transition: all 0.9s;
+}
+
+.project:hover img {
+  opacity: 0.6;
+}
+
+.project:hover .see-more {
+  opacity: 1;
 }
 
 /* hover animation */
