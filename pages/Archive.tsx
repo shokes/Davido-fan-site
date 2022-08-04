@@ -23,8 +23,13 @@ const Archive = () => {
               "We rise by lifting others"
             </p>
             <Link href='/'>
-              <button className='border border-gray-400 p-2 rounded-2xl text-gray-700 font-semibold'>
+              <button className='border border-gray-400 p-2 rounded-2xl text-gray-700 font-semibold mb-14'>
                 Go to Home
+              </button>
+            </Link>
+            <Link href='/Credits'>
+              <button className='uppercase  border border-gray-400   p-12 w-5 h-5 flex items-center justify-center rounded-full text-gray-700'>
+                Credits
               </button>
             </Link>
           </div>

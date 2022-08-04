@@ -19,6 +19,10 @@ body {
   /* overflow: hidden; */
 }
 
+.hero {
+  overflow: hidden;
+}
+
 /* .flow {
   overflow: hidden;
 } */

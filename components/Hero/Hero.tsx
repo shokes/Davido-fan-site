@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section>
       <InitialTransition />
-      <div className='container relative '>
+      <div className='container relative   '>
         <div className='grid grid-cols-2 '>
           <div className='flex gap-10'>
             <div className='w'>
@@ -74,10 +74,16 @@ const Hero = () => {
             </a>
           </div>
         </div>
+
         <div className='absolute top-[22rem] right-[50rem]  '>
           <Image src={davido2} width={200} height={180} />
           {/* <h3 className='font-semibold uppercase'>obo</h3> */}
         </div>
+        <Link href='/Credits'>
+          <button className='uppercase absolute top-[25rem]  left-0 border border-gray-400   p-12 w-5 h-5 flex items-center justify-center rounded-full text-gray-700'>
+            Credits
+          </button>
+        </Link>
       </div>
     </section>
   );

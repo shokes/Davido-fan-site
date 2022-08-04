@@ -48,12 +48,7 @@ const Music = () => {
               return (
                 <Link href={`${item.id}`} key={item.id}>
                   <div className='relative project cursor-pointer'>
-                    <Image
-                      src={item.cover}
-                      width={1300}
-                      height={1000}
-                      className='object-fill'
-                    />
+                    <Image src={item.cover} width={1300} height={1000} />
                     <div className='absolute see-more top-0 text-black  text-3xl capitalize  right-1/2 translate-x-2/4 translate-y-1/2 text-center '>
                       <span>{item.year}</span>
                       <h3 className='my-7 font-extrabold'>{item.title}</h3>
