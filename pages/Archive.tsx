@@ -27,11 +27,13 @@ const Archive = () => {
                 Go to Home
               </button>
             </Link>
-            <Link href='/Credits'>
-              <button className='uppercase  border border-gray-400   p-12 w-5 h-5 flex items-center justify-center rounded-full text-gray-700'>
-                Credits
-              </button>
-            </Link>
+            <a
+              href='https://github.com/shokes/Davido-fan-site'
+              target='_blank'
+              className='uppercase  font-semibold   border border-gray-400   p-10 w-5 h-5 flex items-center justify-center rounded-full text-gray-700'
+            >
+              GitHub
+            </a>
           </div>
         </div>
 

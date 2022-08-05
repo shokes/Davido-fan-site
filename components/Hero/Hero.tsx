@@ -43,34 +43,55 @@ const Hero = () => {
 
           <Image src={hero} width={600} height={600} />
         </div>
-        <div className='absolute top-[5rem] right-[25rem] uppercase font-semibold  text-[#343a40]'>
+        <div className='absolute top-[5rem] right-[25rem] uppercase   text-black'>
           <span className='text-2xl'>01</span>
           <Link href='/Music'>
-            <h3 className='text-7xl mt-10 cursor-pointer '>music</h3>
+            <a
+              id='style-2'
+              className='text-7xl mt-10 cursor-pointer '
+              data-replace='MUSIC'
+            >
+              <span>MUSIC</span>
+            </a>
           </Link>
         </div>
-        <div className='absolute top-[15rem] left-[13rem] uppercase font-semibold text-[#343a40]'>
+        <div className='absolute top-[15rem] left-[13rem] uppercase text-black'>
           <div className='relative'>
             <span className='text-2xl absolute top-[0rem] -left-[2rem]'>
               02
             </span>
-            <Link href='/Awards'>
-              <h3 className='text-7xl mt-10 cursor-pointer '>awards</h3>
-            </Link>
+            {/* <a
+              href='https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Davido'
+              target='_blank'
+              className='text-7xl mt-10 cursor-pointer '
+            >
+              awards
+            </a> */}
+            <a
+              id='style-2'
+              href='https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Davido'
+              data-replace='AWARDS'
+              className='text-7xl mt-10 cursor-pointer '
+              target='_blank'
+            >
+              <span>AWARDS</span>
+            </a>
           </div>
         </div>
-        <div className='absolute top-[24rem] right-[22rem] uppercase font-semibold text-[#343a40] '>
+        <div className='absolute top-[24rem] right-[22rem] uppercase  text-black '>
           <div className='relative'>
             <span className='text-2xl absolute top-[0rem] -left-[2rem]'>
               03
             </span>
 
             <a
+              id='style-2'
               href='https://www.youtube.com/c/DavidoOfficial/videos'
-              target='_blank'
+              data-replace='VIDEOS'
               className='text-7xl mt-10 cursor-pointer '
+              target='_blank'
             >
-              videos
+              <span>VIDEOS</span>
             </a>
           </div>
         </div>
@@ -79,11 +100,14 @@ const Hero = () => {
           <Image src={davido2} width={200} height={180} />
           {/* <h3 className='font-semibold uppercase'>obo</h3> */}
         </div>
-        <Link href='/Credits'>
-          <button className='uppercase absolute top-[25rem]  left-0 border border-gray-400   p-12 w-5 h-5 flex items-center justify-center rounded-full text-gray-700'>
-            Credits
-          </button>
-        </Link>
+
+        <a
+          href='https://github.com/shokes/Davido-fan-site'
+          target='_blank'
+          className='uppercase absolute top-[25rem] font-semibold  left-0 border border-gray-400   p-10 w-5 h-5 flex items-center justify-center rounded-full text-gray-700'
+        >
+          GitHub
+        </a>
       </div>
     </section>
   );

@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
+} */
 
 .container {
   max-width: 75rem;
@@ -16,31 +16,26 @@
 body {
   background-color: #e1dfdd;
   font-family: 'Lora', serif;
-  /* overflow: hidden; */
 }
 
 .hero {
   overflow: hidden;
 }
 
-/* .flow {
-  overflow: hidden;
-} */
-
-.project img {
+.album img {
   transition: all 0.9s;
   object-fit: cover;
 }
-.see-more {
+.click {
   opacity: 0;
   transition: all 0.9s;
 }
 
-.project:hover img {
+.album:hover img {
   opacity: 0.6;
 }
 
-.project:hover .see-more {
+.album:hover .click {
   opacity: 1;
 }
 

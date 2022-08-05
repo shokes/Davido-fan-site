@@ -47,12 +47,14 @@ const Music = () => {
             {albums.map((item) => {
               return (
                 <Link href={`${item.id}`} key={item.id}>
-                  <div className='relative project cursor-pointer'>
+                  <div className='relative album cursor-pointer'>
                     <Image src={item.cover} width={1300} height={1000} />
-                    <div className='absolute see-more top-0 text-black  text-3xl capitalize  right-1/2 translate-x-2/4 translate-y-1/2 text-center '>
+                    <div className='absolute click top-0 text-black  text-3xl capitalize  right-1/2 translate-x-2/4 translate-y-1/2 text-center '>
                       <span>{item.year}</span>
                       <h3 className='my-7 font-extrabold'>{item.title}</h3>
-                      <p>click</p>
+                      <span className=' font-semibold  bg-[#e1dfdd]  translate-x-1/2  click p-14 w-5 h-5 flex items-center justify-center rounded-full text-black'>
+                        click
+                      </span>
                     </div>
                   </div>
                 </Link>

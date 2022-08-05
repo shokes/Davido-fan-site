@@ -5,7 +5,7 @@ import OBO from './public/OBO.jpg';
 const albums = [
   {
     id: 1,
-    title: 'a better time',
+    title: 'A Better Time',
 
     cover: betterTime,
     year: 2020,
@@ -13,25 +13,25 @@ const albums = [
       'FEM',
       'Jowo',
       'Something Fishy',
-      'Holy Ground',
+      'Holy Ground (ft. Nicki Minaj)',
       'Heaven',
       'Very Special',
-      'The Best',
-      'Shopping Spree',
+      'The Best (ft. Mayorkun)',
+      'Shopping Spree (ft. Chris Brown & Thug)',
       'Sunlight',
-      'Tanana',
-      'Mebe',
-      'La La',
-      'So Crazy',
-      'Birthday Cake',
-      'I Got a Friend',
-      'Fade',
-      'On My Way',
+      'Tanana (ft. Tiwa Savage)',
+      'Mebe (ft. Mugeez)',
+      'La La (ft. CKay)',
+      'So Crazy (ft. Lil Baby)',
+      'Birthday Cake (ft. Nas & Hit-Boy)',
+      'I Got a Friend (ft. Mayorkun & Sho Madjozi)',
+      'Fade (ft. Bella Shmurda)',
+      'On My Way (ft. Sauti Sol)',
     ],
   },
   {
     id: 2,
-    title: 'a good time',
+    title: 'A Good Time',
     cover: goodTime,
     year: 2019,
     songs: [
@@ -57,7 +57,7 @@ const albums = [
 
   {
     id: 3,
-    title: 'omo baba olowo',
+    title: 'Omo Baba Olowo',
 
     cover: OBO,
     year: 2012,

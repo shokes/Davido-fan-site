@@ -14,22 +14,20 @@ const MusicDetails = () => {
   return (
     <section>
       <Head>
-        <title> Davido - {music && music.title} </title>
+        <title> Davido - {music?.title} </title>
       </Head>
       <SingleAlbumTrans />
       <SingleMusicNav />
       <div className='container flex gap-40 items-center '>
-        <Image src={`${music && music.cover.src}`} width={500} height={500} />
+        <Image src={`${music?.cover.src}`} width={500} height={500} />
         <div>
-          <span className='text-lg'>{music && music.year}</span>
-          <h3 className='font-bold text-2xl capitalize'>
-            {music && music.title}
-          </h3>
+          <span className='text-lg'>{music?.year}</span>
+          <h3 className='font-bold text-2xl capitalize'>{music?.title}</h3>
           {music?.songs.map((item, index) => {
             return (
-              <div className='flex w-[15rem] mb-1'>
-                <span className='mr-1  w-1/4'>{index + 1} </span>
-                <p className='w-3/4'> {item}</p>
+              <div className='flex  w-[26rem] mb-1'>
+                <span className='mr-1  w-1/6'>{index + 1} </span>
+                <p className='w-7/4'> {item}</p>
               </div>
             );
           })}
