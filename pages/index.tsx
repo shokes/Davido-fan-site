@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Navigation from '../components/Navigation/Navigation';
 
 const home = () => {
+  document.body.style.overflow = 'hidden';
   return (
     <section>
       <Head>

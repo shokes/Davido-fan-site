@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 const blackBox = {
@@ -50,7 +49,7 @@ const InitialTransition = () => {
 
   return (
     <motion.div
-      className='absolute z-50 flex items-center justify-center w-full bg-black'
+      className='absolute z-50 flex items-center justify-center w-full bg-black '
       initial='initial'
       animate='animate'
       variants={blackBox}
