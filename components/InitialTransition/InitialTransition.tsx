@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import React from 'react';
 
 const blackBox = {
   initial: {
@@ -42,14 +43,15 @@ const text = {
 };
 
 const InitialTransition = () => {
-  // Scroll user to top to avoid showing the footer
+  //  Scroll user to top to avoid showing the footer
   // React.useState(() => {
   //   typeof windows !== 'undefined' && window.scrollTo(0, 0);
   // }, []);
 
   return (
     <motion.div
-      className='absolute z-50 flex items-center justify-center w-full bg-black '
+      // the postion was set to absolute previously in case you notice any future glitches
+      className='fixed z-50 flex items-center justify-center w-full bg-black  '
       initial='initial'
       animate='animate'
       variants={blackBox}

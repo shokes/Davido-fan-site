@@ -3,8 +3,20 @@ import ArchiveNav from '../components/Navigation/ArchiveNav';
 import InitialTransition from '../components/InitialTransition/InitialTransition';
 import { ArchiveScroll } from '../components/ArchiveScroll/ArchiveScroll';
 import Head from 'next/head';
+import React from 'react';
 
 const Archive = () => {
+  React.useEffect(() => {
+    // 👇 add class to body element
+    document.body.style.overflow = 'visible';
+
+    // return () => {
+    //   // 👇️ optionally remove styles when component unmounts
+    //   // document.body.style.backgroundColor = null;
+
+    //   document.body.style.overflow = 'visible';
+    // };
+  }, []);
   return (
     <section>
       <Head>

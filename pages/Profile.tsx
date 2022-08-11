@@ -6,8 +6,20 @@ import Head from 'next/head';
 import Profiledav from '../public/davido-2.jpeg';
 import Marquee from 'react-fast-marquee';
 import david from '../public/david.jpg';
+import React from 'react';
 
 const Profile = () => {
+    React.useEffect(() => {
+      // 👇 add class to body element
+      document.body.style.overflow = 'visible';
+
+      // return () => {
+      //   // 👇️ optionally remove styles when component unmounts
+      //   // document.body.style.backgroundColor = null;
+
+      //   document.body.style.overflow = 'visible';
+      // };
+    }, []);
   return (
     <section>
       <Head>
