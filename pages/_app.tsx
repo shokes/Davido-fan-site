@@ -1,14 +1,13 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
-import Navigation from '../components/Navigation/Navigation';
+
 import { AnimatePresence } from 'framer-motion';
-import InitialTransition from '../components/InitialTransition/InitialTransition';
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
-    <>
+    <AnimatePresence>
       <Component {...pageProps} key={router.route} />
-    </>
+    </AnimatePresence>
   );
 }
 export default MyApp;

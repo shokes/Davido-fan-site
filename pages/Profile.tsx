@@ -9,17 +9,17 @@ import david from '../public/david.jpg';
 import React from 'react';
 
 const Profile = () => {
-    React.useEffect(() => {
-      // 👇 add class to body element
-      document.body.style.overflow = 'visible';
+  // React.useEffect(() => {
+  //   // 👇 add class to body element
+  //   document.body.style.overflow = 'visible';
 
-      // return () => {
-      //   // 👇️ optionally remove styles when component unmounts
-      //   // document.body.style.backgroundColor = null;
+  //   // return () => {
+  //   //   // 👇️ optionally remove styles when component unmounts
+  //   //   // document.body.style.backgroundColor = null;
 
-      //   document.body.style.overflow = 'visible';
-      // };
-    }, []);
+  //   //   document.body.style.overflow = 'visible';
+  //   // };
+  // }, []);
   return (
     <section>
       <Head>

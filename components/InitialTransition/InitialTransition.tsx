@@ -55,10 +55,10 @@ const InitialTransition = () => {
       initial='initial'
       animate='animate'
       variants={blackBox}
-      // onAnimationStart={() => document.body.classList.add('overflow-hidden')}
-      // onAnimationComplete={() =>
-      //   document.body.classList.remove('overflow-hidden')
-      // }
+      onAnimationStart={() => document.body.classList.add('overflow-hidden')}
+      onAnimationComplete={() =>
+        document.body.classList.remove('overflow-hidden')
+      }
     >
       <motion.svg variants={textContainer} className='absolute z-50 flex'>
         <pattern
