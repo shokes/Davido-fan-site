@@ -14,14 +14,26 @@ const Hero = () => {
       <div className='container relative   '>
         <div className='grid grid-cols-2 '>
           <div className='flex gap-10'>
-            <div className='w'>
+            {/* <div className='w'>
               <Image
                 src={davido}
                 height={200}
                 width={200}
                 className='rounded-full'
               />
-            </div>
+            </div> */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 5.5 }}
+            >
+              <Image
+                src={davido}
+                height={200}
+                width={200}
+                className='rounded-full'
+              />
+            </motion.div>
             <div className='w-[15rem]'>
               <motion.h2
                 initial={{ opacity: 0 }}
@@ -96,7 +108,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className='absolute top-[22rem] right-[50rem]  '>
+        <div className='absolute top-[22rem] right-[49.5rem]  '>
           <Image src={davido2} width={200} height={180} />
           {/* <h3 className='font-semibold uppercase'>obo</h3> */}
         </div>

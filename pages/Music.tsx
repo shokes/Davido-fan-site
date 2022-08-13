@@ -52,10 +52,10 @@ const Music = () => {
                     <div className='absolute click top-0 text-black  text-3xl capitalize  right-1/2 translate-x-2/4 translate-y-1/2 text-center '>
                       <span>{item.year}</span>
                       <h3 className='my-7 font-extrabold'>{item.title}</h3>
-                      <span className=' font-semibold  bg-[#e1dfdd]  translate-x-1/2  click p-14 w-5 h-5 flex items-center justify-center rounded-full text-black'>
-                        click
-                      </span>
                     </div>
+                    <span className=' font-semibold top-1/2 text-xl absolute right-1/2 translate-x-1/2  bg-[#e1dfdd]  click p-14 w-5 h-5 flex items-center justify-center rounded-full text-black'>
+                      Click
+                    </span>
                   </div>
                 </Link>
               );
