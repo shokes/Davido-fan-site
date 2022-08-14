@@ -35,6 +35,24 @@ body {
   opacity: 1;
 }
 
+@media (max-width: 68em) {
+  .container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  html {
+    font-size: 95%;
+  }
+}
+
+@media (max-width: 24em) {
+  html {
+    font-size: 70%;
+  }
+}
+
 /* hover animation */
 
 a {

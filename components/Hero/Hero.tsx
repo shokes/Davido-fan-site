@@ -12,17 +12,18 @@ const Hero = () => {
     <section>
       <InitialTransition />
       <div className='container relative   '>
-        <div className='grid grid-cols-2 '>
-          <div className='flex gap-10'>
-            {/* <div className='w'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 '>
+          <div className='flex gap-10 my-10 lg:mt-0 '>
+            <div className='w'>
               <Image
                 src={davido}
-                height={200}
-                width={200}
+                height={600}
+                width={600}
                 className='rounded-full'
               />
-            </div> */}
-            <motion.div
+            </div>
+
+            {/* <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 5.5 }}
@@ -33,8 +34,8 @@ const Hero = () => {
                 width={200}
                 className='rounded-full'
               />
-            </motion.div>
-            <div className='w-[15rem]'>
+            </motion.div> */}
+            <div className='w-[rem]'>
               <motion.h2
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -52,11 +53,12 @@ const Hero = () => {
               </p>
             </div>
           </div>
-
-          <Image src={hero} width={600} height={600} />
+          <div className='hidden lg:block'>
+            <Image src={hero} width={600} height={600} />
+          </div>
         </div>
-        <div className='absolute top-[5rem] right-[25rem] uppercase   text-black'>
-          <span className='text-2xl'>01</span>
+        <div className=' lg:absolute top-[5rem] right-[25rem] uppercase   text-black'>
+          <span className='text-2xl hidden lg:block'>01</span>
           <Link href='/Music'>
             <a
               id='style-2'
@@ -67,9 +69,9 @@ const Hero = () => {
             </a>
           </Link>
         </div>
-        <div className='absolute top-[15rem] left-[13rem] uppercase text-black'>
+        <div className=' absolute top-[28rem] lg:top-[15rem]   right-0  uppercase text-black'>
           <div className='relative'>
-            <span className='text-2xl absolute top-[0rem] -left-[2rem]'>
+            <span className='text-2xl hidden lg:absolute top-[0rem] -left-[2rem]'>
               02
             </span>
             {/* <a
@@ -90,9 +92,9 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div className='absolute top-[24rem] right-[22rem] uppercase  text-black '>
+        <div className='absolute top-[34rem] lg:top-[24rem] left-0 lg:right-[22rem] uppercase  text-black '>
           <div className='relative'>
-            <span className='text-2xl absolute top-[0rem] -left-[2rem]'>
+            <span className='text-2xl hidden lg:absolute top-[0rem] -left-[2rem]'>
               03
             </span>
 
@@ -116,7 +118,7 @@ const Hero = () => {
         <a
           href='https://github.com/shokes/Davido-fan-site'
           target='_blank'
-          className='uppercase absolute top-[25rem] font-semibold  left-0 border border-gray-400   p-10 w-5 h-5 flex items-center justify-center rounded-full text-gray-700'
+          className='uppercase lg:flex  absolute lg:top-[25rem] top-[45rem] font-semibold  left-0 border border-gray-400  p-10 w-5 h-5 items-center justify-center rounded-full text-gray-700'
         >
           GitHub
         </a>
