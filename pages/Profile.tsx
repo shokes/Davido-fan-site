@@ -7,6 +7,7 @@ import Profiledav from '../public/davido-2.jpeg';
 import Marquee from 'react-fast-marquee';
 import david from '../public/david.jpg';
 import React from 'react';
+import { BsFillArrowDownCircleFill } from 'react-icons/bs';
 
 const Profile = () => {
   // React.useEffect(() => {
@@ -21,7 +22,7 @@ const Profile = () => {
   //   // };
   // }, []);
   return (
-    <section>
+    <section className='pb-7 lg:pb-0'>
       <Head>
         <title>Davido - Profile </title>
       </Head>
@@ -34,14 +35,15 @@ const Profile = () => {
       <Marquee
         speed={70}
         gradient={false}
-        className='text-9xl bg-[#e1dfdd] my-20 leading-[11rem]'
+        className=' text-6xl md:text-9xl bg-[#e1dfdd] my-5 md:my-20 leading-[11rem]'
       >
-        David Adedeji Adeleke
+        <BsFillArrowDownCircleFill className='mr-4 ml-4' /> David Adedeji
+        Adeleke
       </Marquee>
-      <div className='container-bio flex gap-x-20 '>
+      <div className='container-bio flex flex-col lg:flex-row gap-x-20 '>
         <Image src={Profiledav} width={500} height={500} />
-        <div className='w-[27rem]'>
-          <p className='font-bold text-2xl mb-7'>
+        <div className='lg:w-[27rem]'>
+          <p className='font-bold text-2xl my-7 mb-7 lg:my-0 '>
             is a singer, songwritter, record producer and philanthropist.
           </p>
           <p className=' mb-7 text-sm'>
@@ -68,10 +70,13 @@ const Profile = () => {
           </p>
         </div>
       </div>
-      <div className='my-40'>
-        <Image src={david} width={1400} height={550} />
+      <div className='hidden lg:block my-14 lg:my-40'>
+        <Image src={david} width={1400} height={600} />
       </div>
-      <div className='flex container-bio gap-x-28  '>
+      <div className='lg:hidden my-14 lg:my-40'>
+        <Image src={david} width={1400} height={900} />
+      </div>
+      <div className='flex flex-col lg:flex-row container-bio  gap-14 lg:gap-28  '>
         <q className='font-bold text-3xl'>
           Make that call. Send that text. Forgive that person. Tell them you
           miss them. Let go of that grudge. Show more kindness. Don’t take it

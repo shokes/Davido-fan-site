@@ -70,21 +70,38 @@ const archivePics = [
 export const ArchiveScroll = () => {
   const child = { width: `450em`, height: `30em` };
   return (
-    <div className='app'>
-      <HorizontalScroll reverseScroll={true}>
-        <div style={child} className='flex gap-x-10  '>
+    <>
+      <div className='hidden lg:block app'>
+        <HorizontalScroll reverseScroll={true}>
+          <div style={child} className='flex gap-x-10  '>
+            {archivePics.map((item) => {
+              return (
+                <Image
+                  src={item.picture}
+                  width={1300}
+                  height={50}
+                  className='object-fill'
+                />
+              );
+            })}
+          </div>
+        </HorizontalScroll>
+      </div>
+
+      <div className='container lg:hidden'>
+        <div className='flex flex-col gap-10  '>
           {archivePics.map((item) => {
             return (
               <Image
                 src={item.picture}
-                width={1300}
-                height={50}
-                className='object-fill'
+                width={300}
+                height={550}
+                // className='object-fill'
               />
             );
           })}
         </div>
-      </HorizontalScroll>
-    </div>
+      </div>
+    </>
   );
 };

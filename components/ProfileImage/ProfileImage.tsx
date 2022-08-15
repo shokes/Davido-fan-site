@@ -5,11 +5,12 @@ import Image from 'next/image';
 const ProfileImage = () => {
   return (
     <section className='container'>
-      <div>
+      <div className='hidden lg:block'>
         <Image src={davido2} width={1200} height={550} />
-        {/* <span className='absolute -top-[3.1rem] right-2/4 translate-x-2/4 translate-y-1/2 font-bold text-5xl'>
-          David Adeleke.
-        </span> */}
+      </div>
+
+      <div className='lg:hidden'>
+        <Image src={davido2} width={1200} height={900} />
       </div>
     </section>
   );

@@ -27,13 +27,13 @@ const MusicDetails = () => {
   //  const music = albums.find((item) => item.id === Number(id));
   const music = albums.find((item) => item.id === idNumber);
   return (
-    <section>
+    <section className='pb-7 lg:pb-0'>
       <Head>
         <title> Davido - {music?.title} </title>
       </Head>
       <SingleAlbumTrans />
       <SingleMusicNav />
-      <div className='container flex gap-40 items-center '>
+      <div className='container flex flex-col lg:flex-row gap-10 lg:gap-40 items-center '>
         <Image src={`${music?.cover.src}`} width={500} height={500} />
         <div>
           <span className='text-lg'>{music?.year}</span>

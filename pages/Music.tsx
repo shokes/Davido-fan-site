@@ -35,13 +35,13 @@ const albums = [
 const Music = () => {
   const child = { width: `120em`, height: `70%` };
   return (
-    <section className='overflow-hidden'>
+    <section className='overflow-hidden pb-7 lg:pb-0'>
       <Head>
         <title>Davido - Music </title>
       </Head>
       <InitialTransition />
       <AlbumNav />{' '}
-      <div className='app '>
+      <div className='app hidden lg:block '>
         <HorizontalScroll reverseScroll={true}>
           <div style={child} className='flex gap-x-10    '>
             {albums.map((item) => {
@@ -62,6 +62,17 @@ const Music = () => {
             })}
           </div>
         </HorizontalScroll>
+      </div>
+      <div className='container lg:hidden flex flex-col  gap-10'>
+        {albums.map((item) => {
+          return (
+            <Link href={`${item.id}`} key={item.id}>
+              <div className=' album cursor-pointer'>
+                <Image src={item.cover} width={1300} height={1000} />
+              </div>
+            </Link>
+          );
+        })}
       </div>
     </section>
   );
