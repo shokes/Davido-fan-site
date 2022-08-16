@@ -37,7 +37,7 @@ const MusicDetails = () => {
         <Image src={`${music?.cover.src}`} width={500} height={500} />
         <div>
           <span className='text-lg'>{music?.year}</span>
-          <h3 className='font-bold text-2xl capitalize'>{music?.title}</h3>
+          <h3 className='font-bold text-2xl capitalize my-2'>{music?.title}</h3>
           {music?.songs.map((item, index) => {
             return (
               <div className='flex  w-[26rem] mb-1'>

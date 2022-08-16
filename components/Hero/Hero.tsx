@@ -139,8 +139,9 @@ const Hero = () => {
         <a
           href='https://github.com/shokes/Davido-fan-site'
           target='_blank'
-          className='uppercase flex  absolute lg:top-[25rem] top-[45rem] md:top-[55rem] font-semibold  left-0 border border-gray-400  p-10 w-5 h-5 items-center justify-center rounded-full text-gray-700'
+          className='uppercase flex  absolute lg:top-[25rem] top-[45rem] md:top-[55rem] font-semibold  left-0 border border-gray-400  p-14 w-5 h-5 items-center justify-center rounded-full text-gray-700'
         >
+          {' '}
           GitHub
         </a>
       </div>
@@ -149,3 +150,55 @@ const Hero = () => {
 };
 
 export default Hero;
+
+// import React, { useState } from "react";
+// import { motion } from "framer-motion";
+// import AnimatedText from "./AnimatedText";
+// import "./styles.css";
+
+// export default function App() {
+//   const [replay, setReplay] = useState(true);
+//   // Placeholder text data, as if from API
+//   const placeholderText = [
+//     { type: "heading1", text: "Framer Motion" },
+//     {
+//       type: "heading2",
+//       text: "Animating responsive text!"
+//     }
+//   ];
+
+//   const container = {
+//     visible: {
+//       transition: {
+//         staggerChildren: 0.025
+//       }
+//     }
+//   };
+
+//   // Quick and dirt for the example
+//   const handleReplay = () => {
+//     setReplay(!replay);
+//     setTimeout(() => {
+//       setReplay(true);
+//     }, 600);
+//   };
+
+//   return (
+//     <motion.div
+//       className="App"
+//       initial="hidden"
+//       // animate="visible"
+//       animate={replay ? "visible" : "hidden"}
+//       variants={container}
+//     >
+//       <div className="container">
+//         {placeholderText.map((item, index) => {
+//           return <AnimatedText {...item} key={index} />;
+//         })}
+//       </div>
+//       <button onClick={handleReplay}>
+//         Replay <span>⟲</span>
+//       </button>
+//     </motion.div>
+//   );
+// }

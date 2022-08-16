@@ -32,14 +32,30 @@ const Profile = () => {
         <ProfileImage />
       </div>
 
-      <Marquee
-        speed={70}
-        gradient={false}
-        className=' text-6xl md:text-9xl bg-[#e1dfdd] my-5 md:my-20 leading-[11rem]'
-      >
-        <BsFillArrowDownCircleFill className='mr-4 ml-4' /> David Adedeji
-        Adeleke
-      </Marquee>
+      {/* marquee for larger screens */}
+      <div className='hidden md:block'>
+        <Marquee
+          speed={70}
+          gradient={false}
+          //className=' text-6xl md:text-9xl bg-[#e1dfdd] my-5 md:my-20 leading-[11rem]'
+          className=' text-9xl my-14 leading-[11rem]'
+        >
+          David Adedeji Adeleke
+        </Marquee>
+      </div>
+
+      {/* marquee for smaller screens */}
+      <div className=' md:hidden'>
+        <Marquee
+          speed={70}
+          gradient={false}
+          className=' text-6xl my-5 leading-[7rem]'
+        >
+          David Adedeji Adeleke{' '}
+          <BsFillArrowDownCircleFill className='ml-2 mr-2' />
+        </Marquee>
+      </div>
+
       <div className='container-bio flex flex-col lg:flex-row gap-x-20 '>
         <Image src={Profiledav} width={500} height={500} />
         <div className='lg:w-[27rem]'>
