@@ -10,21 +10,15 @@ import { useEffect, useState } from 'react';
 const MusicDetails = () => {
   const router = useRouter();
   const [idNumber, setIdNumber] = useState<any>(2);
-  //const [modalWriteUp, setmodalWriteUp] = useState<any>();
-  // const { id } = router.query;
 
   useEffect(() => {
     if (!router.isReady) return;
-    // codes using router.query
-    // const { id } = router.query;
-    const id = router.query.id ? +router.query.id : undefined;
 
-    // let id = +router.query.id;
+    const id = router.query.id ? +router.query.id : undefined;
 
     setIdNumber(id);
   }, [router.isReady]);
 
-  //  const music = albums.find((item) => item.id === Number(id));
   const music = albums.find((item) => item.id === idNumber);
   return (
     <section className='pb-7 lg:pb-0'>

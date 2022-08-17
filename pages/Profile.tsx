@@ -37,7 +37,6 @@ const Profile = () => {
         <Marquee
           speed={70}
           gradient={false}
-          //className=' text-6xl md:text-9xl bg-[#e1dfdd] my-5 md:my-20 leading-[11rem]'
           className=' text-9xl my-14 leading-[11rem]'
         >
           David Adedeji Adeleke
