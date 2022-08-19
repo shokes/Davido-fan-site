@@ -6,6 +6,7 @@ import davido2 from '../../public/davido-2.jpeg';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import InitialTransition from '../InitialTransition/InitialTransition';
+import AnimatedText from '../AnimatedText/AnimatedText';
 
 const Hero = () => {
   return (
@@ -32,14 +33,10 @@ const Hero = () => {
             </div>
 
             <div className='w-[15rem] md:w-[22rem] lg:w-[15rem]'>
-              <motion.h2
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1.2 }}
-                className='text-2xl font-bold mb-2'
-              >
-                Davido
-              </motion.h2>
+              <h2 className='text-2xl font-bold mb-2'>Davido</h2>
+              {/* <h2 className='text-2xl font-bold mb-2'>
+                <AnimatedText item={'Davido'} />
+              </h2> */}
               <p className='uppercase mb-5'>
                 singer, songwriter & record producer.
               </p>

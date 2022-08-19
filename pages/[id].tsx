@@ -34,7 +34,7 @@ const MusicDetails = () => {
           <h3 className='font-bold text-2xl capitalize my-2'>{music?.title}</h3>
           {music?.songs.map((item, index) => {
             return (
-              <div className='flex  w-[26rem] mb-1'>
+              <div className='flex  w-[26rem] mb-1 ' key={index}>
                 <span className='mr-1  w-1/6'>{index + 1} </span>
                 <p className='w-7/4'> {item}</p>
               </div>
