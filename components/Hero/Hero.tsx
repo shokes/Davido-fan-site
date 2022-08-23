@@ -9,9 +9,43 @@ import InitialTransition from '../InitialTransition/InitialTransition';
 import AnimatedText from '../AnimatedText/AnimatedText';
 
 const Hero = () => {
+  const text = [
+    {
+      type: 'paragraph',
+      text: 'singer, songwriter & record producer.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Based in Lagos. Founder of DMW, home to some of the biggest artistes in Nigeria.',
+    },
+  ];
+
+  const davidoText = {
+    type: 'paragraph',
+    text: 'Davido',
+  };
+
+  const test = {
+    type: 'paragraph',
+    text: 'another test, ',
+  };
+
+  const sweet = {
+    type: 'paragraph',
+    text: 'i dont know if this is going to work.',
+  };
+
+  const container = {
+    visible: {
+      transition: {
+        staggerChildren: 0.025,
+      },
+    },
+  };
+
   return (
     <section>
-      <InitialTransition />
+      {/* <InitialTransition /> */}
       <div className='container relative   '>
         <div className='grid grid-cols-1 lg:grid-cols-2 mb-7 '>
           <div className='flex gap-10 md:gap-20 my-10 lg:mt-0 '>
@@ -33,18 +67,95 @@ const Hero = () => {
             </div>
 
             <div className='w-[15rem] md:w-[22rem] lg:w-[15rem]'>
-              <h2 className='text-2xl font-bold mb-2'>Davido</h2>
+              <motion.div
+                // className='App'
+                initial='hidden'
+                animate='visible'
+                // animate={replay ? 'visible' : 'hidden'}
+                variants={container}
+              >
+                {' '}
+                <h2 className='text-2xl font-bold mb-2'>
+                  <AnimatedText {...davidoText} />
+                </h2>
+              </motion.div>
+              {/* <h2 className='text-2xl font-bold mb-2'>Davido</h2> */}
               {/* <h2 className='text-2xl font-bold mb-2'>
                 <AnimatedText item={'Davido'} />
               </h2> */}
-              <p className='uppercase mb-5'>
+              <motion.div
+                // className='App'
+                initial='hidden'
+                animate='visible'
+                // animate={replay ? 'visible' : 'hidden'}
+                variants={container}
+              >
+                <div className='uppercase mb-5'>
+                  {/* <AnimatedText {...sweet} /> */}
+                  {text.map((item, index) => {
+                    return <AnimatedText {...item} key={index} />;
+                  })}
+                </div>
+              </motion.div>
+              <motion.div
+                // className='App'
+                initial='hidden'
+                animate='visible'
+                // animate={replay ? 'visible' : 'hidden'}
+                variants={container}
+              >
+                <div className='uppercase mb-5'>
+                  <AnimatedText {...test} />
+                  {/* {text.map((item, index) => {
+                    return <AnimatedText {...item} key={index} />;
+                  })} */}
+                </div>
+              </motion.div>
+              {/* <motion.div
+                // className='App'
+                initial='hidden'
+                animate='visible'
+                // animate={replay ? 'visible' : 'hidden'}
+                variants={container}
+              >
+                <div className='uppercase mb-5'>
+                  <AnimatedText item={sweet} />
+                </div>
+              </motion.div> */}
+              {/* <p className='uppercase mb-5'>
                 singer, songwriter & record producer.
-              </p>
-              <p>
+              </p> */}
+              {/* <p>
                 Based in Lagos. Founder of DMW, home to some of the biggest
                 artistes in Nigeria.{' '}
-              </p>
+              </p> */}
+              {/* <motion.div
+                // className='App'
+                initial='hidden'
+                animate='visible'
+                // animate={replay ? 'visible' : 'hidden'}
+                variants={container}
+              >
+                <div className=''>
+                  {text.map((item, index) => {
+                    return <AnimatedText {...item} key={index} />;
+                  })}
+                </div>
+              </motion.div> */}
             </div>
+            {/* <motion.div
+              // className='App'
+              initial='hidden'
+              animate='visible'
+              // animate={replay ? 'visible' : 'hidden'}
+              variants={container}
+            >
+              <div className='container'>
+                {placeholderText.map((item, index) => {
+                  return <AnimatedText {...item} key={index} />;
+                })}
+              </div>
+            </motion.div> */}
           </div>
           <div className='hidden lg:block'>
             <Image src={hero} width={600} height={600} />

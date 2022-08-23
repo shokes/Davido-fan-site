@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 // Word wrapper
 const Wrapper = (props) => {
   // We'll do this to prevent wrapping of words using CSS
-  return <span className='word-wrapper'>{props.children}</span>;
+  return <span className='word-wrappe'>{props.children}</span>;
 };
 
 // Map API "type" vaules to JSX tag names
@@ -18,16 +18,17 @@ const tagMap = {
 // Handles the deconstruction of each word and character to setup for the
 // individual character animations
 const AnimatedCharacters = (props) => {
+  console.log(props);
   // Framer Motion variant object, for controlling animation
   const item = {
     hidden: {
       y: '200%',
-      color: '#0055FF',
+      // color: '#0055FF',
       transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.85 },
     },
     visible: {
       y: 0,
-      color: '#FF0088',
+      // color: '#FF0088',
       transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.75 },
     },
   };
